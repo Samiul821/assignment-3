@@ -12,11 +12,50 @@
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style>
+        .sora-fonts{
+            font-family: "Sora", serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="sora-fonts">
     <header>
-
+        <!-- navbar section -->
+        <nav class="max-w-[1320px] mx-auto">
+            <div class="navbar bg-base-100 md:border-0 border-b border-lime-600 md:pt-6">
+                <div class="navbar-start">
+                    <a class="hidden md:block"><img src="c2-assets/logo-header.png" alt=""></a>
+                    <a><img class="md:hidden" src="c2-assets/Group.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#111111] text-xl">Product</a></li>
+                        <li><a class="text-[#111111] text-xl">Services</a></li>
+                        <li><a class="text-[#111111] text-xl">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex space-x-5">
+                        <div class="flex space-x-5 items-center">
+                            <div><i class="hidden md:block fa-solid fa-magnifying-glass text-black"></i></div>
+                            <div><i class="hidden md:block fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                        <div class="flex space-x-5">
+                            <a class="hidden md:block py-[10px] px-[30px] text-xl border-2 rounded-lg border-lime-600	">Login</a>
+                            <a class="hidden md:block py-[10px] px-[30px] text-white text-xl bg-lime-600 rounded-lg">Register</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                           <img src="c2-assets/bars-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
